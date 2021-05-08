@@ -1,3 +1,4 @@
 #ignore logs and libraries
 /Logs/*
 /Library/*
+/Temp/*
