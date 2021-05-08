@@ -10,12 +10,12 @@ public class Timer : MonoBehaviour
 
     public void Start()
     {
-        _timerText.text = _timer.ToString();
+        _timerText.text = _timer.ToString("F2");
     }
 
     public void Update()
     {
         _timer -= Time.deltaTime;
-        _timerText.text = _timer.ToString();
+        _timerText.text = _timer.ToString("F2");
     }
 }
