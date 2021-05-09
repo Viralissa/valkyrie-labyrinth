@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,11 +10,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [Tooltip("Character settings (rigid body)")]
         public float MoveSpeed = 30f, JumpForce = 200f, Sensitivity = 500f;
         bool jumpFlag = true; // to jump from surface only
-        private Inventory _inventory;
+        [SerializeField]private Inventory _inventory;
 
         CharacterController character;
         Rigidbody rb;
         Vector3 moveVector;
+
+        private float slowly = 0.5f;
 
         Transform Cam;
         float yRotation;
@@ -30,6 +33,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         void Update()
         {
+            if (MoveSpeed < 0) { MoveSpeed = 0; }
+            if (Input.GetKeyDown(KeyCode.F) && _inventory.present > 0)
+            {
+                MoveSpeed -= slowly;
+            }
+            if (Input.GetKeyDown(KeyCode.T) && _inventory.present > 0)
+            {
+                MoveSpeed += slowly;
+            }
             // camera rotation
             float xmouse = Input.GetAxis("Mouse X") * Time.deltaTime * Sensitivity;
             float ymouse = Input.GetAxis("Mouse Y") * Time.deltaTime * Sensitivity;
