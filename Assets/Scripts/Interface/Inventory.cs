@@ -9,7 +9,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     public class Inventory : MonoBehaviour
     {
 
-        List<Item> item;
+        public List<Item> item;
         public int Range;
         public GameObject cellContainer;
         public Transform _myposition;
@@ -55,7 +55,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (item[i].id == 1)
                     {
                         item[i].countItem--;
-                        if (item[i].countItem > 0) { Instantiate(_present, _myposition.transform.position, _myposition.transform.rotation); }
+                        if (item[i].countItem < 0) { item[i].countItem = 0; }
+                        if (present > 0) { present -= 1; Instantiate(_present, _myposition.transform.position, _myposition.transform.rotation); }
                         DisplayItems();
 
                     }

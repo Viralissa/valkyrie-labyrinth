@@ -178,6 +178,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1441430213}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: _inventory
+      value: 
+      objectReference: {fileID: 1441430213}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
+      propertyPath: m_WalkSpeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
 --- !u!1001 &44922841
@@ -1649,6 +1661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be8d5adf20772c46b56dae6d4246e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: []
   Range: 15
   cellContainer: {fileID: 1426103929}
   _myposition: {fileID: 1715198821}
@@ -2109,18 +2122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timer: 60
   _timerText: {fileID: 1869568044}
---- !u!114 &1749655280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749655273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4d70e1528c849443bbf23a23b9f86e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1839424745
 PrefabInstance:
   m_ObjectHideFlags: 0
