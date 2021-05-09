@@ -57,26 +57,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
     <Compile Include="Assets\Scripts\LabyrinthGenerator\Labyrinth.cs" />
     <Compile Include="Assets\Scripts\Interface\Item.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\amusedART\StoneMonster\Script\Animation_Test.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
+    <Compile Include="Assets\Scripts\PlateDoor.cs" />
     <Compile Include="Assets\Scripts\LabyrinthGenerator\Cell.cs" />
     <Compile Include="Assets\Scripts\Interface\BlueDoor.cs" />
+    <Compile Include="Assets\Scripts\Win.cs" />
     <Compile Include="Assets\Scripts\LabyrinthGenerator\PositionSetter.cs" />
     <Compile Include="Assets\Scripts\Interface\RedDoor.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\Scripts\LeftPlate.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\Scripts\EnemyView.cs" />
     <Compile Include="Assets\AN Interactive Physical Door Pack\Scripts\AN_HeroController.cs" />
     <Compile Include="Assets\AN Interactive Physical Door Pack\Scripts\AN_Button.cs" />
     <Compile Include="Assets\AN Interactive Physical Door Pack\Scripts\AN_PlugScript.cs" />
     <Compile Include="Assets\Scripts\LabyrinthGenerator\LabyrinthGenerator.cs" />
     <Compile Include="Assets\AN Interactive Physical Door Pack\Scripts\AN_DoorKey.cs" />
-    <Compile Include="Assets\Scripts\pressure plate.cs" />
+    <Compile Include="Assets\Scripts\Rightplate.cs" />
+    <Compile Include="Assets\Scripts\CenterPlate.cs" />
     <Compile Include="Assets\PressButton.cs" />
     <Compile Include="Assets\Scripts\LabyrinthGenerator\DirectionEnum.cs" />
     <Compile Include="Assets\Scripts\Interface\Inventory.cs" />
@@ -84,10 +90,9 @@
     <Compile Include="Assets\Scripts\Interface\YellowDoor.cs" />
     <Compile Include="Assets\AN Interactive Physical Door Pack\Scripts\AN_DoorScript.cs" />
     <Compile Include="Assets\Scripts\GameOverScreen.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\GameStarter.cs" />
-    <Compile Include="Assets\Scripts\EnemyView.cs" />
-    <Compile Include="Assets\Scripts\EnemyController.cs" />
+    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\PlayerView.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
