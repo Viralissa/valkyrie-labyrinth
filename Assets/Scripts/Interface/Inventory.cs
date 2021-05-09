@@ -12,8 +12,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         List<Item> item;
         public int Range;
         public GameObject cellContainer;
+        public Transform _myposition;
         public KeyCode showInventory;
         public int present = 0;
+        public GameObject _present;
         public bool HaveRedkey = false;
         public bool HaveBluekey = false;
         public bool HaveYellowkey = false;
@@ -43,6 +45,19 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     if (hit.collider.GetComponent<Item>())
                     {
                         AddItem(hit.collider.GetComponent<Item>());
+                    }
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+                for (int i = 0; i < item.Count; i++)
+                {
+                    if (item[i].id == 1)
+                    {
+                        item[i].countItem--;
+                        if (item[i].countItem > 0) { Instantiate(_present, _myposition.transform.position, _myposition.transform.rotation); }
+                        DisplayItems();
+
                     }
                 }
             }
