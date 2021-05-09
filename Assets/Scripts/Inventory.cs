@@ -14,6 +14,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public GameObject cellContainer;
         public KeyCode showInventory;
         public int present = 0;
+        public bool HaveRedkey = false;
+        public bool HaveBluekey = false;
+        public bool HaveYellowkey = false;
 
         void Start()
         {
@@ -47,6 +50,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         void AddItem(Item currentItem)
         {
+
             if (currentItem.isStackable)
             {
                 AddStackableItem(currentItem);
@@ -60,6 +64,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         void AddUnstackableItem(Item currentItem)
         {
+            if (currentItem.id == 2) { HaveBluekey = true; }
+            if (currentItem.id == 3) { HaveRedkey = true; }
+            if (currentItem.id == 4) { HaveYellowkey = true; }
             for (int i = 0; i < item.Count; i++)
             {
                 if (item[i].id == 0)
