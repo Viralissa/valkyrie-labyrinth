@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\LabyrinthGenerator\Labyrinth.cs" />
     <Compile Include="Assets\Scripts\Interface\Item.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\amusedART\StoneMonster\Script\Animation_Test.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Scripts\LabyrinthGenerator\Cell.cs" />
     <Compile Include="Assets\Scripts\Interface\BlueDoor.cs" />
@@ -84,7 +85,9 @@
     <Compile Include="Assets\AN Interactive Physical Door Pack\Scripts\AN_DoorScript.cs" />
     <Compile Include="Assets\Scripts\GameOverScreen.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\amusedART\StoneMonster\Script\Animation_Test.cs" />
+    <Compile Include="Assets\Scripts\GameStarter.cs" />
+    <Compile Include="Assets\Scripts\EnemyView.cs" />
+    <Compile Include="Assets\Scripts\EnemyController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
