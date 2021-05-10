@@ -19,5 +19,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 _leftplate = true;
             }
         }
+        void Update()
+        {
+            if (_leftplate) { ChangeColor(); }
+            else gameObject.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+        }
+        void ChangeColor()
+        {
+            gameObject.GetComponent<Renderer>().material.color = new Color(0, 1, 0);
+        }
     }
 }
