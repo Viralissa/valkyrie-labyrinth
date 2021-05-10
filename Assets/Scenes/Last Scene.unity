@@ -16340,6 +16340,10 @@ PrefabInstance:
       value: Hero_Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 2189870819492480556, guid: a53b80592d7404d498fb05550c9144d6, type: 3}
+      propertyPath: JumpForce
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2189870819492480556, guid: a53b80592d7404d498fb05550c9144d6, type: 3}
       propertyPath: MoveSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -16347,6 +16351,10 @@ PrefabInstance:
       propertyPath: _inventory
       value: 
       objectReference: {fileID: 1791878021}
+    - target: {fileID: 2189870819492480556, guid: a53b80592d7404d498fb05550c9144d6, type: 3}
+      propertyPath: Sensitivity
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2189870819492480559, guid: a53b80592d7404d498fb05550c9144d6, type: 3}
       propertyPath: m_RootOrder
       value: 12
