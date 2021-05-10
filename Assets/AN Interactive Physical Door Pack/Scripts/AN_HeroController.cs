@@ -16,7 +16,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         Rigidbody rb;
         Vector3 moveVector;
 
-        private float slowly = 0.5f;
+        private float slowly = 0.1f;
 
         Transform Cam;
         float yRotation;
