@@ -24,7 +24,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             item = new List<Item>();
 
-            cellContainer.SetActive(false);
+            cellContainer.SetActive(true);
 
             for (int i = 0; i < cellContainer.transform.childCount; i++)
             {
